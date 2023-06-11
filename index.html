@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>BuonaPizza</title>
+</head>
+<body>
+    <div id="contenedorPrincipal" class="m-4 bg-white">
+        <div class="row p-5">
+            <div class="col">
+                <h5 class="bg-body-tertiary p-3 rounded-pill container mb-3">MEJORA TU PIZZA</h5>
+                <p>Puede elegir tres ingredientes gratis. Cada ingrediente adicional cuesta $800 pesos cada uno.</p>
+                <p>Ingredientes disponibles para agregar a su pizza:</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="carne" value="carne">
+                    <label class="form-check-label" for="carne">
+                        Carne
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="pollo" value="pollo">
+                    <label class="form-check-label" for="pollo">
+                        Pollo
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="tocino" value="tocino">
+                    <label class="form-check-label" for="tocino">
+                        Tocino
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="mozarella" value="mozarella">
+                    <label class="form-check-label" for="mozarella">
+                        Mozzarella
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="champiñon" value="champiñon">
+                    <label class="form-check-label" for="champiñon">
+                        Champiñón
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cebolla" value="cebolla">
+                    <label class="form-check-label" for="cebolla">
+                        Cebolla
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="piña" value="piña">
+                    <label class="form-check-label" for="piña">
+                        Piña
+                    </label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="pimenton" value="pimenton">
+                    <label class="form-check-label" for="pimenton">
+                        Pimentón
+                    </label>
+                </div>
+                <p>Los ingredientes seleccionados son:</p>
+                <p id="ingredientesSeleccionados"></p>
+                <p>Los ingredientes <b>extra</b> seleccionados son:</p>
+                <p id="ingredientesExtra"></p>
+            </div>
+            <div class="col">
+                <h5 class="bg-body-tertiary p-3 rounded-pill container mb-3">RESUMEN DEL PEDIDO</h5>
+                <div>
+                    <div class="d-flex border-bottom mb-3">
+                        <p class="me-auto ps-3">Pizza XL</p>
+                        <p class="pe-3"><b>$15.000</b></p>
+                    </div>
+                    <div class="d-flex border-bottom mb-3">
+                        <p class="me-auto ps-3">Ingredientes Extra:</p>
+                        <p class="pe-3"><b id="precioIngredientesExtra"></b></p>
+                    </div>
+                    <div class="d-flex border-bottom">
+                        <p class="me-auto ps-3">Propina</p>
+                        <p class="pe-3"><b id="propina"></b></p>
+                    </div>
+                    <div class="d-flex mt-4">
+                            <div class="input-group mb-3 border p-2 rounded-pill">
+                                <input id="inputPropina" type="number" min="0" class="form-control border border-0" placeholder="Ingresar propina" aria-label="Ingresar propina" aria-describedby="button-addon2">
+                                <button class="btn btn-dark rounded-pill" type="button" id="enviarPropina">Enviar Pedido con Propina</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="./assets/JS/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
